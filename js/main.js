@@ -1,7 +1,7 @@
 const search = document.getElementById('search')
 const matchList = document.getElementById('match-list')
-// const reset = document.getElementById('output')
-
+const textArea = document.querySelector('#search');
+const resetButton = document.querySelector('#resetBtn');
 
 // Search states.json and filter it
 const searchStates = async searchText =>{
@@ -37,5 +37,10 @@ const outputHTML = matches => {
     }
 }
 
+function resetTextArea(){
+    textArea.value = '';
+}
+
+resetButton.addEventListener('click', resetTextArea);
 search.addEventListener('input', () => searchStates(search.value));
 {/* <small> Lat: ${eachMatch.lat} / Long: ${eachMatch.long}</small> */}
