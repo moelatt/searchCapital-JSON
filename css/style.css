@@ -1,0 +1,31 @@
+.header{
+    background-image: linear-gradient(to right, gray, black);
+}
+.Topic{
+    font-size: 2rem;
+    text-align: center;
+    background-image: linear-gradient(to right, rgb(32, 32, 177), rgb(167, 36, 36));
+    /* border-radius: 10%; */
+    padding: 1rem 1rem;
+    align-items: center;
+    border: double;
+    border-color: rgb(11, 83, 85);
+    font-family: cursive;
+}
+.form-group {
+    display: grid;
+    grid-template-columns: 3fr 0.3fr;
+    border-radius: 30%;
+}
+.form-group .btn{
+    background-color: rgb(154, 13, 154);
+    border-radius: 10%;
+}
+@media (max-width: 700px){
+    .row h3{
+        font-size: 1.5rem;
+    }
+    .Topic{
+        font-size: 1rem;
+    }
+}

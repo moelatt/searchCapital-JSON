@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Find State Capital</title>
+</head>
+<body class="header">
+    <div class = "Topic"> 
+        United States country have fifty states. Each state has it owns Capital
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <h3 class="text-center mb-3">
+                    <i class="fas fa-flag-usa"></i>
+                    <img src="img/img2.png" alt="">
+                    State Capital Search in USA
+                </h3>
+                <div class="form-group">
+                    <input 
+                    type="text" 
+                    id="search" 
+                    class="form-control form-control-lg"
+                    placeholder="Enter the state name of USA"/>
+                    <script type="text/javascript">
+                        function eraseText(){
+                            location.reload();
+                        }
+                    </script>
+                    <input class="btn" type="button" value="Clear" onclick="eraseText()"> 
+                </div>
+                <div id="match-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src = "js/main.js"></script>
+</body>
+</html>
