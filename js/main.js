@@ -5,7 +5,7 @@ const matchList = document.getElementById('match-list')
 
 // Search states.json and filter it
 const searchStates = async searchText =>{
-    const res = await fetch('https://moelatt.github.io/data/states.json');
+    const res = await fetch('https://moelatt.github.io/searchCapital-JSON/data/states.json');
     const states = await res.json();
 
     // get matches to current text input
