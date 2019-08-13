@@ -39,7 +39,7 @@ const outputHTML = matches => {
 
 function resetTextArea(){
     textArea.value = '';
-    matchList.value = '';
+    matchList.innerHTML = '';
 }
 
 resetButton.addEventListener('click', resetTextArea);
